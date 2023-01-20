@@ -2,6 +2,7 @@
   "name": "types-to-proptypes",
   "version": "0.1.0",
   "private": true,
+  "main": "./build/static/js/main.*.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -19,9 +20,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && tsc -p ./tsconfig.typings.json",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +45,5 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.3.3"
-  },
-  "typings": "./index.d.ts"
+  }
 }
