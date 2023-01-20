@@ -5,8 +5,7 @@
   "main": "./build/static/js/main.*.js",
   "types": "./build/typings/index.d.ts",
   "files": [
-    "./build/**/*",
-    "./build/*"
+    "build"
   ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
