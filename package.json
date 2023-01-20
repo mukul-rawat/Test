@@ -15,6 +15,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
+    "types-to-proptypes": "github:mukul-rawat/Test",
     "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
   },
@@ -23,7 +24,7 @@
     "build": "react-scripts build && tsc -p ./tsconfig.typings.json",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "npm run build"
+    "preinstall": "npm run build"
   },
   "eslintConfig": {
     "extends": [
